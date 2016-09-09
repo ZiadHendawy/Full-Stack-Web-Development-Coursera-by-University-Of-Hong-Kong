@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body >
+	</body>
+	<script>
+		var colors = ["Black","Red","Green","Cyan","Gray","Yellow ","White","Purple","Brown","Orange","Pink","Silver"];
+		var number = Math.random()*12;
+		var integer = Math.floor(number);		
+		var target  = colors[integer]; 	 	
+		var think  = "I am thinking of one of these colors:\n\n";
+		var question = "\n\nwhat color am I thinking of ? \n"
+		var ans ;		
+		function do_game(){
+			alert(target);
+			ans = prompt(think+colors+question);	
+			while(ans!= target){
+		ans = prompt(think+colors+question);				
+			}
+		}
+
+		do_game();	
+	</script>
+</html>

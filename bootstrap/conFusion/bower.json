@@ -1,0 +1,21 @@
+{
+  "name": "conFusion",
+  "description": "website",
+  "main": "index.html",
+  "keywords": [
+    "aaa"
+  ],
+  "authors": [
+    "ziad"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

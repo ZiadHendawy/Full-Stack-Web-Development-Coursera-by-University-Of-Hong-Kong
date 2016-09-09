@@ -1,0 +1,22 @@
+#!/usr/bin/nodejs
+var debug = require('debug')('my-application');
+var app = require('../app');
+var https = require('https');
+var fs = require('fs');
+
+var port = normalizePort(process.env.PORT || 3000);
+app.set('port', port);
+app.set('secPort',port+443);
+
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+
+
+var option={
+	key:fs.readFileSync(__dirname+'');
+	cert:fs
+}
+
+var secureServer = https.creat(option,app);
